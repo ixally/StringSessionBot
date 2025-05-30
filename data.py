@@ -54,9 +54,9 @@ Telegram Bot to generate Pyrogram and Telethon string session by @Jasebxall
 
 Support : [Click Here](https://t.me/ixallsupport)
 
-Framework : [Pyrogram](https://docs.pyrogram.org)
+Store : [Jaseb](https://t.me/Jasebxall)
 
-Language : [Python](https://www.python.org)
+More : [Literacy](https://t.me/gubezrnur/31)
 
 Developer : @jPipis
     """
