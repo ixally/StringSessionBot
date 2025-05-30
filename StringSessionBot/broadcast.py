@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from StringSessionBot.database.broadcast_db import Users  # Ganti sesuai struktur project lo
+from StringSessionBot.database.users_sql import Users  # Ganti sesuai struktur project lo
 from StringSessionBot.database import SESSION
 import asyncio
 
