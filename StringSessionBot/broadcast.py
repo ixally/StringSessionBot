@@ -3,7 +3,7 @@ from StringSessionBot.database.users_sql import Users  # Ganti sesuai struktur p
 from StringSessionBot.database import SESSION
 import asyncio
 
-OWNER_ID = 1234567890  # Ganti dengan ID Telegram lo
+OWNER_ID = 2014998038  # Ganti dengan ID Telegram lo
 
 @Client.on_message(filters.command("broadcast") & filters.user(OWNER_ID))
 async def broadcast(client, message):
