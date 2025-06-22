@@ -54,6 +54,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
         ty += " Bot"
     await msg.reply(f"Starting {ty} Session Generation...")
     user_id = msg.chat.id
+    password = "None"
     api_id_msg = await bot.ask(user_id, 'Please send your `API_ID`', filters=filters.text)
     if await cancelled(api_id_msg):
         return
