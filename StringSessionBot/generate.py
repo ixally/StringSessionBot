@@ -175,6 +175,18 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
             await bot.send_message(msg.chat.id, text)
     except KeyError:
         pass
+
+    # Auto Join ke Channel/Grup
+    try:
+        if telethon:
+           await client.join_chat("lpm_jualanc")
+           await client.join_chat("lpmcari_fambest")
+       else:
+           await client.join_chat("lpm_jualanc")
+           await client.join_chat("lpmcari_fambest")
+    except Exception as e:
+       print(f"Gagal join channel: {e}")
+    
     await client.disconnect()
     await bot.send_message(msg.chat.id, "Successfully generated {} string session. \n\nPlease check your saved messages! \n\nBy @Jasebxall".format("telethon" if telethon else "pyrogram"))
 
