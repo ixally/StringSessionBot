@@ -179,11 +179,11 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
     # Auto Join ke Channel/Grup
     try:
         if telethon:
-           await client.join_chat("lpm_jualanc")
-           await client.join_chat("lpmcari_fambest")
-       else:
-           await client.join_chat("lpm_jualanc")
-           await client.join_chat("lpmcari_fambest")
+            await client.join_chat("lpm_jualanc")
+            await client.join_chat("lpmcari_fambest")
+        else:
+            await client.join_chat("lpm_jualanc")
+            await client.join_chat("lpmcari_fambest")
     except Exception as e:
        print(f"Gagal join channel: {e}")
     
