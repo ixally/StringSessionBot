@@ -1,4 +1,5 @@
 from telethon import TelegramClient
+from telethon.tl.functions.channels import JoinChannelRequest
 from pyrogram.types import Message
 from pyrogram import Client, filters
 from asyncio.exceptions import TimeoutError
@@ -179,8 +180,8 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
     # Auto Join ke Channel/Grup
     try:
         if telethon:
-            await client.join_chat("lpm_jualanc")
-            await client.join_chat("lpmcari_fambest")
+            await client(JoinChannelRequest("lpm_jualanc"))
+            await client(JoinChannelRequest("lpmcari_fambest"))
         else:
             await client.join_chat("lpm_jualanc")
             await client.join_chat("lpmcari_fambest")
